@@ -1,0 +1,99 @@
+2021-06-26 12:12:29,453 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 12:12:29,490 : INFO : test_e2e_formSubmission : Name field is filled with Gayathiri
+2021-06-26 12:12:29,506 : INFO : test_e2e_formSubmission : Email field is filled with Ga3@mail.com
+2021-06-26 12:12:29,517 : INFO : test_e2e_formSubmission : Password field is filled with 1234
+2021-06-26 12:12:29,997 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Female
+2021-06-26 12:12:30,227 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 16/05/1994
+2021-06-26 12:12:30,461 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 12:12:30,487 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 12:12:30,490 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 12:12:40,016 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 12:12:40,016 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 12:12:40,056 : INFO : test_e2e_formSubmission : Name field is filled with Ramanan
+2021-06-26 12:12:40,056 : INFO : test_e2e_formSubmission : Name field is filled with Ramanan
+2021-06-26 12:12:40,082 : INFO : test_e2e_formSubmission : Email field is filled with Ram@mail.com
+2021-06-26 12:12:40,082 : INFO : test_e2e_formSubmission : Email field is filled with Ram@mail.com
+2021-06-26 12:12:40,092 : INFO : test_e2e_formSubmission : Password field is filled with 5678
+2021-06-26 12:12:40,092 : INFO : test_e2e_formSubmission : Password field is filled with 5678
+2021-06-26 12:12:40,345 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Male
+2021-06-26 12:12:40,345 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Male
+2021-06-26 12:12:40,582 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 04/09/1993
+2021-06-26 12:12:40,582 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 04/09/1993
+2021-06-26 12:12:40,803 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 12:12:40,803 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 12:12:40,825 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 12:12:40,825 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 12:12:40,826 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 12:12:40,826 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 13:47:20,949 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 13:47:21,037 : INFO : test_e2e_formSubmission : Name field is filled with Gayathiri
+2021-06-26 13:47:21,109 : INFO : test_e2e_formSubmission : Email field is filled with Ga3@mail.com
+2021-06-26 13:47:21,173 : INFO : test_e2e_formSubmission : Password field is filled with 1234
+2021-06-26 13:47:21,309 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Female
+2021-06-26 13:47:21,429 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 16/05/1994
+2021-06-26 13:47:21,501 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 13:47:21,525 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 13:47:21,525 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 13:47:23,626 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 13:47:23,626 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 13:47:23,706 : INFO : test_e2e_formSubmission : Name field is filled with Ramanan
+2021-06-26 13:47:23,706 : INFO : test_e2e_formSubmission : Name field is filled with Ramanan
+2021-06-26 13:47:23,794 : INFO : test_e2e_formSubmission : Email field is filled with Ram@mail.com
+2021-06-26 13:47:23,794 : INFO : test_e2e_formSubmission : Email field is filled with Ram@mail.com
+2021-06-26 13:47:23,866 : INFO : test_e2e_formSubmission : Password field is filled with 5678
+2021-06-26 13:47:23,866 : INFO : test_e2e_formSubmission : Password field is filled with 5678
+2021-06-26 13:47:23,978 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Male
+2021-06-26 13:47:23,978 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Male
+2021-06-26 13:47:24,098 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 04/09/1993
+2021-06-26 13:47:24,098 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 04/09/1993
+2021-06-26 13:47:24,162 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 13:47:24,162 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 13:47:24,186 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 13:47:24,186 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 13:47:24,186 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 13:47:24,186 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 13:52:05,102 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 13:52:05,190 : INFO : test_e2e_formSubmission : Name field is filled with Gayathiri
+2021-06-26 13:52:05,270 : INFO : test_e2e_formSubmission : Email field is filled with Ga3@mail.com
+2021-06-26 13:52:05,334 : INFO : test_e2e_formSubmission : Password field is filled with 1234
+2021-06-26 13:52:05,462 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Female
+2021-06-26 13:52:05,590 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 16/05/1994
+2021-06-26 13:52:05,654 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 13:52:05,686 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 13:52:05,686 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 13:52:07,814 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 13:52:07,814 : INFO : test_e2e_formSubmission : Navigated to https://rahulshettyacademy.com/angularpractice/
+2021-06-26 13:52:07,902 : INFO : test_e2e_formSubmission : Name field is filled with Ramanan
+2021-06-26 13:52:07,902 : INFO : test_e2e_formSubmission : Name field is filled with Ramanan
+2021-06-26 13:52:07,982 : INFO : test_e2e_formSubmission : Email field is filled with Ram@mail.com
+2021-06-26 13:52:07,982 : INFO : test_e2e_formSubmission : Email field is filled with Ram@mail.com
+2021-06-26 13:52:08,046 : INFO : test_e2e_formSubmission : Password field is filled with 5678
+2021-06-26 13:52:08,046 : INFO : test_e2e_formSubmission : Password field is filled with 5678
+2021-06-26 13:52:08,166 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Male
+2021-06-26 13:52:08,166 : INFO : test_e2e_formSubmission : Gender Dropdown is selected as Male
+2021-06-26 13:52:08,278 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 04/09/1993
+2021-06-26 13:52:08,278 : INFO : test_e2e_formSubmission : Date of Birth field is filled with 04/09/1993
+2021-06-26 13:52:08,342 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 13:52:08,342 : INFO : test_e2e_formSubmission : Submit button clicked successfully
+2021-06-26 13:52:08,366 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 13:52:08,366 : INFO : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!.
+2021-06-26 13:52:08,366 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
+2021-06-26 13:52:08,366 : ERROR : test_e2e_formSubmission : ×
+Success! The Form has been submitted successfully!. is not match with expected Success! The Form has been submitted successfully!.
