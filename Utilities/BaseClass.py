@@ -32,4 +32,10 @@ class BaseClass:
         logger.addHandler(fileHandler)
         logger.setLevel(logging.DEBUG)
         return logger
+    def elementShouldBeVisible(self, locator):
+        assert locator.is_displayed(), f"Element {locator} is not visible on the screen."
+        print(f"Element {locator} is visible.")
 
+    def elementShouldNotBeVisible(self, locator):
+        assert not locator.is_displayed(), (f"Element {locator} is visible.")
+        print(f"Element {locator} is not visible.")
