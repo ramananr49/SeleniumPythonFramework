@@ -1,5 +1,6 @@
 import inspect
 import logging
+from datetime import datetime, timedelta
 
 import pytest
 from selenium.webdriver.support.select import Select
@@ -32,6 +33,7 @@ class BaseClass:
         logger.addHandler(fileHandler)
         logger.setLevel(logging.DEBUG)
         return logger
+
     def elementShouldBeVisible(self, locator):
         assert locator.is_displayed(), f"Element {locator} is not visible on the screen."
         print(f"Element {locator} is visible.")
@@ -39,3 +41,13 @@ class BaseClass:
     def elementShouldNotBeVisible(self, locator):
         assert not locator.is_displayed(), (f"Element {locator} is visible.")
         print(f"Element {locator} is not visible.")
+
+    def scroll_element_into_view(self, locator):
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", locator)
+
+    def get_todays_date(self, format):
+        return datetime.today().strftime(format)
+
+    def getFutureDate(self, days_ahead, format):
+        futureDate = datetime.today() + timedelta(days=days_ahead)
+        return futureDate.strftime(format)

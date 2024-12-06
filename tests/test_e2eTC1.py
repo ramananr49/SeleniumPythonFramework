@@ -44,9 +44,10 @@ class Test_prospectModule(BaseClass):
         buttons = homePage.getAddToCartBtns()
         for button in buttons:
             button.click()
-            print(button.find_element_by_xpath("parent::div//parent::div/h4").text.split("-")[
-                      0].strip() + " added to the Cart")
-            ActProducts.append(button.find_element_by_xpath("parent::div//parent::div/h4").text)
+            # print(button.find_element_by_xpath("parent::div//parent::div/h4").text.split("-")[0].strip() + " added to the Cart")
+            print(button.find_element(By.XPATH, "parent::div//parent::div/h4").text.split("-")[0].strip() + " added to the Cart")
+            # ActProducts.append(button.find_element_by_xpath("parent::div//parent::div/h4").text)
+            ActProducts.append(button.find_element(By.XPATH, "parent::div//parent::div/h4").text)
 
         #self.driver.find_element_by_xpath("//img[@alt='Cart']").click()
         homePage.getCartIcon().click()
@@ -68,10 +69,10 @@ class Test_prospectModule(BaseClass):
 
         #beforeTotal = int(self.driver.find_element_by_class_name("discountAmt").text)
         beforeTotal = int(checkoutPage.getTotalAfterDiscount().text)
-        self.driver.find_element_by_class_name("promoCode").send_keys("rahulshettyacademy")
-        self.driver.find_element_by_class_name("promoBtn").click()
+        self.driver.find_element(By.CSS_SELECTOR, ".promoCode").send_keys("rahulshettyacademy")
+        self.driver.find_element(By.CSS_SELECTOR, ".promoBtn").click()
         wait.until(expected_conditions.presence_of_element_located((By.CLASS_NAME, "promoInfo")))
-        ActText = self.driver.find_element_by_class_name("promoInfo").text
+        ActText = self.driver.find_element(By.CSS_SELECTOR, ".promoInfo").text
         ExpText = "Code applied ..!"
         #afterTotal = float(self.driver.find_element_by_class_name("discountAmt").text)
         afterTotal = float(checkoutPage.getTotalAfterDiscount().text)
@@ -85,13 +86,13 @@ class Test_prospectModule(BaseClass):
 
         print("Check 04:- Verify if sum of products in checkout page matches with Total Amount")
 
-        amounts = self.driver.find_elements_by_xpath("//tr/td[5]/p[@class='amount']")
+        amounts = self.driver.find_elements(By.XPATH, "//tr/td[5]/p[@class='amount']")
 
         for amount in amounts:
             summation = summation + int(amount.text)
 
         print(summation)
-        Total = int(self.driver.find_element_by_class_name("totAmt").text)
+        Total = int(self.driver.find_element(By.CSS_SELECTOR, ".totAmt").text)
 
         print("{}{}".format("Total is ", Total))
         assert Total == summation
