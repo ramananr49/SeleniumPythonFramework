@@ -17,6 +17,9 @@ class PC_HomePage:
     dateOfBirthField = (By.NAME, "bday")
     submitBtn = (By.CSS_SELECTOR, "input[type='submit']")
     sucessMsg = (By.CSS_SELECTOR, ".alert.alert-success.alert-dismissible")
+    ProtoCommerceHeader = (By.XPATH, "//a[text()='ProtoCommerce']")
+    HomeTab = (By.XPATH, "//a[text()='Home']")
+    ShopTab = (By.XPATH, "//a[text()='Shop']")
 
     def getNameField(self):
         return self.driver.find_element(*PC_HomePage.nameField)
@@ -50,3 +53,12 @@ class PC_HomePage:
 
     def getSuccessMsg(self):
         return self.driver.find_element(*PC_HomePage.sucessMsg)
+
+    def getProtoCommerceHeader(self):
+        return self.driver.find_element(*PC_HomePage.ProtoCommerceHeader)
+
+    def getHomeTab(self):
+        return self.driver.find_element(*PC_HomePage.HomeTab)
+
+    def getShopTab(self):
+        return self.driver.find_element(*PC_HomePage.ShopTab)

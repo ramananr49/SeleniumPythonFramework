@@ -1,4 +1,8 @@
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
+
 from Utilities.BaseClass import BaseClass
+from pageObject.Common_Elements import Common_Elements
 from pageObject.SP_MainPage import SP_MainPage
 
 
@@ -41,3 +45,14 @@ class Test_SeleniumPacticePage(BaseClass):
         ActText = SPracticePage.getDropDown().get_attribute("value")
         assert ActText == "option3"
 
+    def test_DynamicDropdwon_Handling(self):
+        country = "Netherlands"
+        ExpectedTitle = "Suggession Class Example"
+        self.driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+        sp_mainpage = SP_MainPage(self.driver)
+        ActTitle = sp_mainpage.getDynamicDropdownTitle().text
+        assert ActTitle == ExpectedTitle
+        sp_mainpage.getdynDropdownTextBox().send_keys(country)
+        WebDriverWait(self.driver, 4).until(expected_conditions.visibility_of_element_located(sp_mainpage.dynamicDropdownOption(country)))
+        sp_mainpage.getDynamicDropdownOption(country)
+        assert country == sp_mainpage.getdynDropdownTextBox().get_attribute('value')
