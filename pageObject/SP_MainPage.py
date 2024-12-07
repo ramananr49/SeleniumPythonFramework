@@ -20,6 +20,10 @@ class SP_MainPage:
     dropDownTitle = (By.CSS_SELECTOR, ".cen-right-align legend")
     stDropDown = (By.ID, "dropdown-class-example")
 
+    dynamicDropdownTitle = (By.XPATH, "//div[@id='select-class-example']//legend")
+    dynDropdownTextBox = (By.CSS_SELECTOR, "input#autocomplete")
+
+
     def getRadioBrnTitle(self):
         return self.driver.find_element(*SP_MainPage.radioBtnTitle)
 
@@ -43,3 +47,16 @@ class SP_MainPage:
 
     def getDropDown(self):
         return self.driver.find_element(*SP_MainPage.stDropDown)
+
+    def getDynamicDropdownTitle(self):
+        return self.driver.find_element(*SP_MainPage.dynamicDropdownTitle)
+
+    def getdynDropdownTextBox(self):
+        return self.driver.find_element(*SP_MainPage.dynDropdownTextBox)
+
+    def dynamicDropdownOption(self, country):
+        return (By.XPATH, f"//div[@class = 'ui-menu-item-wrapper' and text()='{country}']")
+
+    def getDynamicDropdownOption(self, Country):
+        countryname = self.dynamicDropdownOption(Country)
+        return self.driver.find_element(*countryname)

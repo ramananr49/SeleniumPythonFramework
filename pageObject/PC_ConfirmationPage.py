@@ -7,10 +7,11 @@ class PC_ConfirmationPage:
         self.driver = driver
 
     countryTxtBox = (By.ID, "country")
-    iAgreeCheckbox = (By.ID, "checkbox2")
+    iAgreeCheckbox = (By.CSS_SELECTOR, "label[for='checkbox2']")
     purchaseBtn = (By.CSS_SELECTOR, "input[value='Purchase']")
     successToastMsg = (By.CSS_SELECTOR, "div[class*='alert-success']")
     dismissBtn = (By.CSS_SELECTOR, "a[class='close']")
+    dropdownPopup = (By.CSS_SELECTOR, "div[class='suggestions']")
 
     def getCountryTextBox(self):
         return self.driver.find_element(*PC_ConfirmationPage.countryTxtBox)
@@ -26,3 +27,6 @@ class PC_ConfirmationPage:
 
     def getDismissButton(self):
         return self.driver.find_element(*PC_ConfirmationPage.dismissBtn)
+
+    def getDropdownPopup(self):
+        return self.driver.find_element(*PC_ConfirmationPage.dropdownPopup)

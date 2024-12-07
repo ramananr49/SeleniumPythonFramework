@@ -3,7 +3,9 @@ import logging
 from datetime import datetime, timedelta
 
 import pytest
+from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 @pytest.mark.usefixtures("invokeBrowser")
@@ -51,3 +53,17 @@ class BaseClass:
     def getFutureDate(self, days_ahead, format):
         futureDate = datetime.today() + timedelta(days=days_ahead)
         return futureDate.strftime(format)
+
+    def elementShouldBePresent(self, locatorVariable):
+        try:
+            WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(locatorVariable))
+            return True
+        except:
+            return False
+
+    def elementShouldNotBePresent(self, locatorVariable):
+        try:
+            WebDriverWait(self.driver, 5).until(expected_conditions.invisibility_of_element_located(locatorVariable))
+            return True
+        except:
+            return False
